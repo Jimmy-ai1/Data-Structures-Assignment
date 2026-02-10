@@ -1,4 +1,4 @@
-# Create an empty list to hold our array items
+# Create an empty list to hold the array items
 my_array = []
 
 print("--- Simple Array Manager ---")
@@ -35,4 +35,5 @@ while True:
         break
     
     else:
+
         print("Oops! Please enter 1, 2, or 3.")
