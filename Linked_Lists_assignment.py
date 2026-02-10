@@ -1,4 +1,3 @@
-# Assigning head to None
 head = None
 
 print("--- Simple Linked List Manager ---")
@@ -8,6 +7,7 @@ while True:
     choice = input("Choice: ").strip()
 
     if choice == "1":
+        # Assigns the key 'data' to the value entered by the user and the key 'next' to none as it is going to the end of the list
         val = input("Enter node data: ").strip()
         new_node = {"data": val, "next": None}
         
@@ -44,4 +44,5 @@ while True:
     
     # Exit option
     elif choice == "4":
+
         break
