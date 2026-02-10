@@ -6,13 +6,13 @@ my_queue = deque()
 print("--- Professional Queue Manager (FIFO) ---")
 
 while True:
-    # We convert to list only for a clean display
+    # Convert it to a list for a clean display of the items
     print(f"\nCurrent Queue: {list(my_queue)}")
     print("Options: 1. Enqueue | 2. Dequeue | 3. Peek | 4. Exit")
     
     choice = input("Enter choice: ").strip()
 
-    # Enqueue adds to the back of the queue
+    # Enqueue adds an item to the back of the queue
     if choice == "1":
         item = input("Enter value: ").strip()
         if item:
@@ -21,7 +21,7 @@ while True:
         else:
             print("Error: Input cannot be empty.")
 
-    # Dequeue removes the front item (the first one added)
+    # Dequeue removes the front item (the first one added) - FIFO
     elif choice == "2":
         if my_queue:
             removed_item = my_queue.popleft() 
@@ -42,4 +42,5 @@ while True:
         break
         
     else:
+
         print("Invalid choice, please try again.")
