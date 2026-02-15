@@ -15,5 +15,17 @@ class BinarySearchTree:
             self.root = BinaryTree(data)
         else:
             self._insert_recursive(self.root, data)
+            
+    def _insert_recursive(self, node, data):
+        if data < node.data:
+            if node.left is None:
+                node.left = BinaryTreeNode(data)
+            else:
+                self._insert_recursive(node.left, data)
+        else:
+            if node.right is None:
+                node.right = BinaryTreeNode(data)
+            else:
+                self._insert_recursive(node.right, data)
 
 
