@@ -41,5 +41,19 @@ class BinarySearchTree:
             return self._search_recursive(node.left, data)
         else:
             return self._search_recursive(node.right, data)
+    
+    def search (self, data):
+        return self._search_recursive(self.root, data)
+    
+    # Helper method for Search method
+    def _search_recursive(self, node, data):
+        if node is None:
+            return False
+        if data == node.data:
+            return True
+        elif data < node.data:
+            return self._search_recursive(node.left, data)
+        else:
+            return self._search_recursive(node.right, data)
 
 
