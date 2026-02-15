@@ -34,7 +34,7 @@ class Graph:
         dfs_helper(start)
         return result
 
-    #Breadth first search
+    #Breadth first  search
     def bfs(self, start):
         visited = {start}
         queue = deque([start])
