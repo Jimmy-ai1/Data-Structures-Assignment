@@ -56,4 +56,13 @@ class BinarySearchTree:
         else:
             return self._search_recursive(node.right, data)
 
+    def inorder_traversal(self):
+        result = []
+        self._inorder_recursive(self.root, result)
+        return result
 
+    def _inorder_recursive(self, node, result):
+        if node:
+            self._inorder_recursive(node.left, result)
+            result.append(node.data)
+            self._inorder_recursive(node.right, result)
