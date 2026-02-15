@@ -12,7 +12,7 @@ class BinarySearchTree:
 
     def insert(self, data):
         if not self.root:
-            self.root = BinaryTree
+            self.root = BinaryTree(data)
         else:
             self._insert_recursive(self.root, data)
 
