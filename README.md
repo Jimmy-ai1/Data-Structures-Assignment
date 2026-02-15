@@ -84,3 +84,55 @@ Trees are chosen when you need to store data that has a natural hierarchy or whe
 - Leaf: A node with no children (the "end" of a branch).
 - Subtree: Any node and all its descendants can be viewed as a smaller tree within the larger one.
 - Height: The number of edges on the longest path from the root to a leaf
+
+
+
+### Graphs
+
+A Graph is a non-linear data structure consisting of a set of vertices (nodes) connected by edges.
+Graphs are chosen when you need to model complex relationships between entities that are not strictly hierarchical, such as networks, maps, or social connections.
+
+**Real-World Analogy**: A social network where users are vertices and friendships or followers are edges. Similarly, cities are vertices and roads are edges in a transportation map.
+
+**Key Terminology**
+
+Vertex (Node): A fundamental unit representing an entity in the graph (e.g., a person or a city).
+
+Edge: A connection between two vertices (e.g., friendship or road).
+
+Directed / Undirected:
+
+Directed → edges have a direction (A → B).
+
+Undirected → edges go both ways (A ↔ B).
+
+Weighted / Unweighted:
+
+Weighted → edges have a cost or value (e.g., distance, time, or price).
+
+Unweighted → edges are all equal (exist or don’t exist).
+
+Neighbor: A vertex that is directly connected to another vertex via an edge.
+
+Degree: Number of edges connected to a vertex.
+
+In directed graphs, you have in-degree (edges coming in) and out-degree (edges going out).
+
+Path: A sequence of vertices connected by edges.
+
+Cycle: A path where the first and last vertices are the same.
+
+Connected Graph: A graph where there is a path between every pair of vertices.
+
+**Applications:**
+
+Social networks (Facebook, LinkedIn)
+
+Navigation and maps (Google Maps, GPS routing)
+
+Recommendation systems (Netflix, Amazon)
+
+Web crawling (search engines like Google)
+
+**Why Use Graphs:**
+Graphs are perfect when you need to represent relationships, connections, and networks where data cannot be organized strictly in a hierarchy (like trees) or sequentially (like arrays). They support powerful algorithms like DFS, BFS, shortest path (Dijkstra), and cycle detection.
