@@ -4,7 +4,7 @@ class Graph:
     def __init__ (self, directed=False ):
         
         self.graph = {} # this uses the adjacency list rep
-        self.derected = derected # directed is a one way connection
+        self.directed = directed # directed is a one way connection
 
     def add_vertex (self, vertex):
         if vertex not in self.graph:
@@ -42,11 +42,36 @@ class Graph:
 
         while queue:
             vertex = queue.popleft()
-            result.append(vrtex)
+            result.append(vertex)
 
             for neighbor, _ in self.graph.get(vertex, []):
-                if neighbornot in visited:
+                if neighbor not in visited:
                     visited.add(neighbor)
                     queue.append(neighbor)
 
         return result
+
+
+
+
+g = Graph()
+g.add_edge("A", "B")
+g.add_edge("A", "C")
+g.add_edge("B", "D")
+g.add_edge("C", "D")
+
+    #  DFS 
+dfs_result = g.dfs("A")
+print("DFS starting at A:", dfs_result)
+    # Should visit nodes as deep as possible first
+assert set(dfs_result) == {"A", "B", "C", "D"}  # all nodes visited
+print(" DFS test passed")
+
+    # BFS
+bfs_result = g.bfs("A")
+print("BFS starting at A:", bfs_result)
+    # Should visit nodes level by level
+assert bfs_result == ["A", "B", "C", "D"]  # one possible correct BFS order
+print(" BFS test passed")
+
+print("All traversal tests passed successfully")
