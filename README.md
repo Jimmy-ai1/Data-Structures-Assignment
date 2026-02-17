@@ -1,4 +1,4 @@
-# Data Structures and Algorithms - Comprehensive Guide
+# Data Structures and Algorithms Assignment
 ## Overview
 This repository contains Python implementations of various data structures based on the classification from the course notes, along with real-world applications and examples.
 
