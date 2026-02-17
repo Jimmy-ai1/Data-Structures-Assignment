@@ -1,8 +1,12 @@
-# Linear Data Structures
-Linear data structures are data structures whose elements are stored in non-hierarchical way where each element has the
-successors and predecessors except the first and last element. There are four types namely: Arrays, Stacks, Linked Lists, and Queues as illustrated below.  
+# Data Structures and Algorithms - Comprehensive Guide
+## Overview
+This repository contains Python implementations of various data structures based on the classification from the course notes, along with real-world applications and examples.
 
-## 1. Arrays  
+## Data Structure Classification
+## Linear Data Structures
+Linear data structures are data structures whose elements are stored in a non-hierarchical way, where each element has successors and predecessors except the first and last element. There are four types namely: Arrays, Stacks, Linked Lists, and Queues, as illustrated below.  
+
+### 1. Arrays  
 **Definition:** A linear data structure that stores a collection of elements in contiguous memory locations. This allows the computer to calculate the position of any element using a mathematical formula based on its index. 
 
 **Key Characteristics:**
@@ -17,7 +21,7 @@ successors and predecessors except the first and last element. There are four ty
 **Application:** Image processing and contact lists - Arrays provide constant-time access to elements if you know the index. In an image, pixels are stored in a 2D array because the computer needs to access specific coordinates (x, y) instantly.
 
 
-## 2. Stacks
+### 2. Stacks
 **Definition:** A Stack is a linear data structure that serves as a collection of elements with two principal operations: push and pop. It operates on the Last-In, First-Out (LIFO) principle—meaning the most recent element added is the first one to be removed.
 
 **Real-World Analogy:** Cafeteria Trays: You place a new tray on top of the pile (Push). When someone needs a tray, they take the one that was just placed there (Pop).
@@ -35,7 +39,7 @@ successors and predecessors except the first and last element. There are four ty
 
 **Application:** Browser history - You always want the last page you visited to be the first one you go back to.
 
-## **3. Queues**
+### **3. Queues**
 
 **Definition:** A Queue is a linear data structure that operates on the First-In, First-Out (FIFO) principle. In a queue, the first element added is the first one to be removed, much like a real-life waiting line.
 
@@ -50,7 +54,7 @@ successors and predecessors except the first and last element. There are four ty
 
 **Application:** Printer task scheduling - It ensures fairness. The first person to hit "Print" gets their document first.
 
-## **4. Linked Lists**
+### **4. Linked Lists**
 
 **Definition:**  
 A Linked List is a linear data structure where elements are not stored in contiguous (adjacent) memory locations. Instead, the elements are linked using pointers.  
@@ -77,11 +81,11 @@ A node is typically represented as a record or object with two fields:
 
 **Application:** Music player playlists or "Undo" functionality in Word - In a playlist, "Next" and "Previous" are just pointers to the next node.
 
-# Non-linear Data Structures
+## Non-linear Data Structures
 Non-linear data structures arrange data elements hierarchically or interconnectedly rather than sequentially, allowing for multi-level relationships
 There are two types of non-linear data structures namely: Trees and Graphs
 
-## 1. Trees
+### 1. Trees
 A Tree is a non-linear data structure representing a hierarchy. It consists of Nodes connected by Edges  
 Trees are chosen when you need to store data that has a natural hierarchy or when you need faster searching than a Linked List but more flexibility than a sorted Array.  
 
@@ -96,7 +100,7 @@ Trees are chosen when you need to store data that has a natural hierarchy or whe
 
 **Application:** File systems (Folders/Subfolders) - Trees represent hierarchical data. A folder contains files, which might contain more folders.
 
-## 2. Graphs
+### 2. Graphs
 A Graph is a non-linear data structure consisting of a set of vertices (nodes) connected by edges. They are used to model complex relationships between entities that are not strictly hierarchical, such as networks, maps, or social connections.
 
 **Real-World Analogy**: A social network where users are vertices and friendships or followers are edges. Similarly, cities are vertices and roads are edges in a transportation map.
